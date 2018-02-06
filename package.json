@@ -1,0 +1,34 @@
+{
+  "name": "cifra",
+  "version": "0.0.1",
+  "description": "Encrypt and Decrypt files with node",
+  "main": "index.js",
+  "bin": {
+    "cifra": "index.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luisangonzalez/cifra.git"
+  },
+  "keywords": [
+    "encrypt",
+    "decrypt",
+    "node",
+    "files"
+  ],
+  "author": "https://github.com/Luisangonzalez/",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Luisangonzalez/cifra/issues"
+  },
+  "homepage": "https://github.com/Luisangonzalez/cifra#readme",
+  "dependencies": {
+    "commander": "^2.14.0"
+  }
+}
