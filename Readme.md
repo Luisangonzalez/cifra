@@ -29,6 +29,9 @@
   Commands:
 
     Encrypt|e <file> <password> [algorithm]   Encript file
-    Decrypt|d <file> <password> [algorithm]]  Decrypt file
+    Decrypt|d <file> <password> [algorithm]  Decrypt file
 
 ```
+
+* #### [algorithm] --> aes192 it is default algorithm.
+On recent OpenSSL releases, openssl `list-cipher-algorithms` will display the available cipher algorithms.

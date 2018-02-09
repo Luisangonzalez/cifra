@@ -18,7 +18,7 @@ program
     });
 
 program
-    .command('Decrypt <file> <password> [algorithm]d')
+    .command('Decrypt <file> <password> [algorithm]')
     .alias('d')
     .description('Decrypt file')
     .action((file, password, algorithm) => {
