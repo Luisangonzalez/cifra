@@ -1,6 +1,7 @@
 # Cifra
 
 [![Build Status](https://travis-ci.org/Luisangonzalez/cifra.svg?branch=master)](https://travis-ci.org/Luisangonzalez/cifra)
+[![Coverage Status](https://coveralls.io/repos/github/Luisangonzalez/cifra/badge.svg?branch=master)](https://coveralls.io/github/Luisangonzalez/cifra?branch=master)
 
 ## cli-tool to Encrypt and Decrypt files
 
