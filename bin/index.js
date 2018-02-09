@@ -7,10 +7,10 @@ const Decrypt = require('../lib/decrypt');
 
 program
     .version('0.0.1')
-    .description('Encript and decript files with node');
+    .description('Encrypt and decrypt files with node');
 
 program
-    .command('encript <file> <password> [algorithm]')
+    .command('Encrypt <file> <password> [algorithm]')
     .alias('e')
     .description('Encript file')
     .action((file, password, algorithm) => {
@@ -18,11 +18,11 @@ program
     });
 
 program
-    .command('decrypt <file> <password> [algorithm]d')
+    .command('Decrypt <file> <password> [algorithm]d')
     .alias('d')
-    .description('Decript filet')
+    .description('Decrypt file')
     .action((file, password, algorithm) => {
-        let decript = new Decrypt(file, password, algorithm);
+        let decrypt = new Decrypt(file, password, algorithm);
     });   
 
     program.parse(process.argv);
