@@ -5,7 +5,6 @@ const Encrypt = require('../lib/encrypt');
 const Decrypt = require('../lib/decrypt');
 
 
-
 program
     .version('0.0.1')
     .description('Encript and decript files with node');
