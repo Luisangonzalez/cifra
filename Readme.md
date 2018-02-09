@@ -1,14 +1,18 @@
 # Cifra
+
 [![Build Status](https://travis-ci.org/Luisangonzalez/cifra.svg?branch=master)](https://travis-ci.org/Luisangonzalez/cifra)
+
 ## cli-tool to Encrypt and Decrypt files
 
+
 ### Install:
+
 `npm install -g cifra`
 
 ### Use:
 
 ```bash
-➜  ~ cifra -h       
+➜  ~ cifra -h
 
   Usage: cifra [options] [command]
 
