@@ -1,8 +1,8 @@
 {
   "name": "cifra",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Encrypt and Decrypt files with node",
-  "main": "bin/index.js",
+  "main": "index.js",
   "preferGlobal": true,
   "bin": {
     "cifra": "bin/index.js"
@@ -19,7 +19,10 @@
     "encrypt",
     "decrypt",
     "node",
-    "files"
+    "files",
+    "cli",
+    "cli encrypt",
+    "cli decrypt"
   ],
   "author": "https://github.com/Luisangonzalez/",
   "license": "MIT",

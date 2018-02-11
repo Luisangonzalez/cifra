@@ -10,7 +10,7 @@
 
 `npm install -g cifra`
 
-### Use:
+### Use in cli:
 
 ```bash
 ➜  ~ cifra -h
@@ -35,3 +35,26 @@
 
 * #### [algorithm] --> aes192 it is default algorithm.
 On recent OpenSSL releases, openssl `list-cipher-algorithms` will display the available cipher algorithms.
+
+### Use in your projects:
+
+```js
+const encrypt = require('cifra').Encrypt;
+const decrypt = require('cifra').Decrypt;
+
+
+// Use with await
+async function encryptAndDecryptExample() {
+    await encrypt.file('./arg.js', 'mafasd');
+    await decrypt.file('./arg.js.enc','mafasd');
+}
+
+encryptAndDecryptExample();
+
+
+// Return promise
+encrypt.file('./arg.js', 'mafasd')
+    .then(() => {
+        decrypt.file('./arg.js.enc','mafasd');
+    });
+```

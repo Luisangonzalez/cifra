@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 
 const program = require('commander');
-const Encrypt = require('../lib/encrypt');
-const Decrypt = require('../lib/decrypt');
-
+const encrypt = require('../index').Encrypt;
+const decrypt = require('../index').Decrypt;
 
 program
-    .version('0.0.1')
+    .version('0.0.2')
     .description('Encrypt and decrypt files with node');
 
 program
@@ -14,15 +13,15 @@ program
     .alias('e')
     .description('Encript file')
     .action((file, password, algorithm) => {
-        let encrypt = new Encrypt(file, password, algorithm);
+        encrypt.file(file, password, algorithm);
     });
 
 program
-    .command('Decrypt <file> <password> [algorithm]')
+    .command('Decrypt <file> <password> [algorithm]d')
     .alias('d')
     .description('Decrypt file')
     .action((file, password, algorithm) => {
-        let decrypt = new Decrypt(file, password, algorithm);
-    });   
+        decrypt.file(file, password, algorithm);
+    });
 
-    program.parse(process.argv);
+program.parse(process.argv);
